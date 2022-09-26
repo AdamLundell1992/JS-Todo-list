@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="TodoList.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="todo-list">
+    <div class="form-and-title">
+      <h1 class="todo-title">Todays todo list</h1>
+      <div class="line-separator"></div>
+      <div class="todo-list-form">
+        <input placeholder="Enter todo title" type="text" id="todo-title"></input>
+        <input placeholder="Enter todo content" type="text" id="todoText"></input>
+        <button class="submit-button" onclick="submitData()">Submit</button>
+  </div>
+    <p id="error-message" class="error-message"></p>
+  </div>
+    <div class="todo-list-items">
+      <div id="list-items">
+      </div>
+    </div>
+  </div>
+  <script src="TodoList.js"></script>
+</body>
+</html>

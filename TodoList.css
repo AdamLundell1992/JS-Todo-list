@@ -1,0 +1,119 @@
+.check-box[type="checkbox"]{
+  height: 20px;
+  width: 20px;
+}
+.check-box[type="checkbox"]:checked{
+  opacity:1;
+  accent-color: green;
+  animation: checkedAnimation 1s ease-in;
+}
+@keyframes checkedAnimation {
+50% {transform: rotate(360deg);}
+}
+
+.error-message{
+  color: red;
+}
+.all-content-indexes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1rem;
+  align-items: center;
+}
+.title-text-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 0 0.5rem 0;
+}
+.todo-index-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+}
+.remove {
+  height: 1.5rem;
+  border-radius: 15px;
+  background: red;
+  font-weight: bold;
+  width: 7rem;
+  font-size: 0.8rem;
+  height: 1.4rem;
+  box-shadow: 2px 2px 5px black;;
+}
+.remove:hover {
+  color:white;
+  background: red;
+}
+.box{
+  background:whitesmoke;
+  border-radius: 20px;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  width: fit-content;
+  margin: 0 3rem 1rem 0;
+}
+.todo-content-text{
+  background: white;
+  border-radius: 20px;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.remove-animate{
+  width:100%;
+  width: 100%;
+  animation: animatedRemove 1s linear;
+}
+@keyframes animatedRemove {
+  0% { margin-left:0rem; opacity: 0.9;}
+  20% { margin-left:15rem; opacity: 0.7;}
+  40% { margin-left:30rem; opacity: 0.5;}
+  60% { margin-left:45rem; opacity: 0.3;}
+  80% { margin-left:60rem; opacity: 0.1;}
+  100% { margin-left:75rem; opacity: 0;}
+}
+.ttitle{
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  color: green;
+  text-decoration: underline;
+}
+.form-and-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.todo-title{
+  font-size: 4rem;
+  color:green;
+  text-shadow: 2px 2px 5px black;
+  margin:1rem 0 1rem 0;
+}
+input{
+  font-size: 1.5rem;
+  border-radius:10px;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.line-separator{
+  width: 100%;
+  height: 2px;
+  border-bottom: 2px solid black;
+  margin: 0 0 1rem 0;
+}
+.submit-button{
+  font-size: 1.3rem;
+  border-radius: 20px;
+  padding: 0 1rem 0 1rem;
+  cursor: pointer;
+  height: 2rem;
+}
+.submit-button:hover{
+  background-color: green;
+  color: white;
+}
